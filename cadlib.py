@@ -372,6 +372,13 @@ def plot_sections(sections: list[dict], path: Path, title: str = ""):
                     color="crimson", fontsize=8, va="bottom")
         for (p, text) in s.get("notes", []):
             ax.text(p[0], p[1], text, fontsize=8, color="0.25")
+        # annotations do not count for autoscaling; without this, dims placed
+        # next to the part end up outside the axes
+        extra = [p for d in s.get("dims", []) for p in d[:2]]
+        extra += [n[0] for n in s.get("notes", [])]
+        if extra:
+            ax.update_datalim(np.asarray(extra, dtype=float))
+            ax.autoscale_view()
         ax.set_aspect("equal")
         ax.grid(alpha=0.25)
         ax.set_title(s["label"], fontsize=10)
