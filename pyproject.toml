@@ -1,0 +1,18 @@
+[project]
+name = "cad"
+version = "0.1.0"
+description = "Parametric 3D-print parts in Python (manifold3d + trimesh)"
+requires-python = ">=3.11"
+dependencies = [
+    "manifold3d",
+    "trimesh",
+    "scipy",
+    "rtree",
+    "matplotlib",
+    "numpy",
+    "lxml",
+    "networkx",
+]
+
+[tool.uv]
+package = false

@@ -1,0 +1,43 @@
+{
+  "skill_name": "cad-print",
+  "evals": [
+    {
+      "id": 1,
+      "name": "remote-holder",
+      "prompt": "Ich hätte gern einen Halter für meine Apple-TV-Fernbedienung (Siri Remote, 136,0 x 35,0 x 9,3 mm, Kanten rundum mit ca. 4 mm Radius), den ich mit doppelseitigem Klebeband (Streifen 19 mm breit) seitlich an meinen Schreibtisch klebe. Die Fernbedienung soll von oben hineingesteckt werden und nicht herausfallen, unten sitzt der USB-C-Anschluss, der zum Laden erreichbar bleiben soll. Druck auf dem Bambu P2S in PETG.",
+      "expected_output": "Python-Skript im Repo, Checks bestanden, OpenSCAD-Renderblatt, STL+3MF in Druckausrichtung, Übergabe mit Risiken und Stellschrauben",
+      "files": [],
+      "assertions": [
+        "Teilskript liegt unter parts/<name>/ mit VERSION-Konstante und Ausgaben in out/<version>/",
+        "STL und 3MF exportiert; Netz wasserdicht und genau ein Körper",
+        "Exportiertes Teil liegt in Druckausrichtung auf z=0",
+        "Prüfreport (checks.json o.ä.) vorhanden und alle Checks bestanden, inkl. Wandstärke und Überhänge",
+        "Mit OpenSCAD gerenderte Ansichten (PNG) vorhanden, auch am Gegenstück",
+        "Übergabe nennt offene Risiken mit konkretem Parameter zum Nachstellen",
+        "Übergabe enthält ASCII-Skizze des Konzepts und Annahmen",
+        "Tasche hat Spiel >= 0.2 mm pro Seite gegenüber 136 x 35 x 9.3 mm",
+        "Unterseite lässt USB-C-Anschluss zugänglich (Öffnung im Boden oder unten offen)",
+        "Klebefläche mindestens 19 mm breit"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "clip-right-corner",
+      "prompt": "Der Kabelclip v2 passt super. Kannst Du mir einen zweiten für die rechte obere Ecke desselben Monitors machen? Da soll das Netzkabel meiner Schreibtischlampe (Durchmesser 6,0 mm) über die Ecke nach hinten geführt werden. Dicke an der rechten Ecke 17,2 mm, 5 cm weiter links an der Oberkante 19,1 mm, 5 cm tiefer an der rechten Kante 18,1 mm. Bild beginnt auch rechts 8 mm vom Rand.",
+      "expected_output": "Gespiegelter/abgeleiteter Clip mit neuen Maßen, bestätigte Passungen übernommen (0.6 Klemmung, Spalt ~70 %), Ring auf 6 mm Kabel skaliert, Checks bestanden, Renders, Export",
+      "files": [],
+      "assertions": [
+        "Teilskript liegt unter parts/<name>/ mit VERSION-Konstante und Ausgaben in out/<version>/",
+        "STL und 3MF exportiert; Netz wasserdicht und genau ein Körper",
+        "Exportiertes Teil liegt in Druckausrichtung auf z=0",
+        "Prüfreport (checks.json o.ä.) vorhanden und alle Checks bestanden, inkl. Wandstärke und Überhänge",
+        "Mit OpenSCAD gerenderte Ansichten (PNG) vorhanden, auch am Gegenstück",
+        "Übergabe nennt offene Risiken mit konkretem Parameter zum Nachstellen",
+        "Übergabe enthält ASCII-Skizze des Konzepts und Annahmen",
+        "Klemmung 0.6 mm aus v2 übernommen",
+        "Kabelring auf 6 mm skaliert: Spalt ca. 70 % (3.9-4.5 mm), Bohrung ca. 1.33x (7.5-8.5 mm)",
+        "Monitordicken der rechten Ecke (17.2/19.1/18.1) verwendet, Sperrzone Bildfläche 8 mm geprüft"
+      ]
+    }
+  ]
+}

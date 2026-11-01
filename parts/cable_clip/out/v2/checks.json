@@ -1,0 +1,79 @@
+{
+  "name": "cable_clip v2",
+  "ok": true,
+  "results": [
+    {
+      "check": "part watertight",
+      "ok": true,
+      "detail": "watertight=True",
+      "value": null
+    },
+    {
+      "check": "part one piece",
+      "ok": true,
+      "detail": "1 body/bodies",
+      "value": null
+    },
+    {
+      "check": "part size",
+      "ok": true,
+      "detail": "47.60 x 23.85 x 47.60 mm, 8.63 cm3",
+      "value": [
+        47.6,
+        23.852,
+        47.6
+      ]
+    },
+    {
+      "check": "frame clears monitor",
+      "ok": true,
+      "detail": "overlap 0.00 mm3 (allowed 0.00)",
+      "value": 0.0
+    },
+    {
+      "check": "frame clearance",
+      "ok": true,
+      "detail": "min gap 0.20 mm (need 0.18000000000000002)",
+      "value": 0.19972590695091472
+    },
+    {
+      "check": "rib squeeze",
+      "ok": true,
+      "detail": "ribs press 0.6 mm into the back, 41.9 mm3",
+      "value": 41.85818186354829
+    },
+    {
+      "check": "keep-out: screen area in front of the picture",
+      "ok": true,
+      "detail": "overlap 0.00 mm3 (allowed 0.00)",
+      "value": 0.0
+    },
+    {
+      "check": "cable sits free in the ring",
+      "ok": true,
+      "detail": "overlap 0.00 mm3 (allowed 0.00)",
+      "value": 0.0
+    },
+    {
+      "check": "cable snaps in",
+      "ok": true,
+      "detail": "gap 3.2 mm < cable 4.5 mm, bore 6.0 mm",
+      "value": 3.2
+    },
+    {
+      "check": "wall thickness",
+      "ok": true,
+      "detail": "p1=1.71 mm, p5=2.00 mm, 0.57% below 1.6 mm, thin spots around [-18.6, -0.9, 28.8]",
+      "value": {
+        "p1": 1.7141681338705834,
+        "frac_thin": 0.005666666666666667
+      }
+    },
+    {
+      "check": "overhangs",
+      "ok": true,
+      "detail": "10.0 mm2 steeper than 45.0 deg (allowed 12.0), around [1.1, 7.0, 17.1]",
+      "value": 10.019647168028403
+    }
+  ]
+}
