@@ -25,6 +25,12 @@ OpenSCAD-Renders und STL/3MF-Export. Dazu ein Claude-Code-Skill, der den Workflo
 
 Ein Teil bauen: `uv run python -I parts/cable_clip/cable_clip.py`
 
+## Danke
+
+An Michael G.: Sein Build-Log zur BP-SCL6-Akku- und Kartenbox war die Vorlage für
+diesen Workflow, und seine auf Anhieb passenden Drucke lieferten die ersten bestätigten
+Passungswerte.
+
 ## Lizenz
 
 MIT, siehe `LICENSE`.
